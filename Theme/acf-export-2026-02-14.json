@@ -1,0 +1,555 @@
+[
+    {
+        "key": "group_698f732ba46ee",
+        "title": "Service - CPT",
+        "fields": [
+            {
+                "key": "field_698f732bbd2e2",
+                "label": "Short Description",
+                "name": "sr_cpt_short_description",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": "",
+                "placeholder": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_698f7341bd2e3",
+                "label": "Icon",
+                "name": "sr_cpt_icon",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_698f74c3bd2e4",
+                "label": "Price",
+                "name": "sr_cpt_price",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_698f74cfbd2e5",
+                "label": "Features List",
+                "name": "sr_cpt_features_list",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_698f74f0bd2e6",
+                        "label": "Feature",
+                        "name": "sr_cpt_feature",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_698f74cfbd2e5"
+                    }
+                ]
+            },
+            {
+                "key": "field_698f7509bd2e7",
+                "label": "Status",
+                "name": "sr_cpt_status",
+                "aria-label": "",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "active": "Active",
+                    "inactive": "Inactive"
+                },
+                "default_value": "active",
+                "return_format": "value",
+                "allow_null": 0,
+                "layout": "horizontal"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "service"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_sr_hero_block",
+        "title": "SR Hero Block",
+        "fields": [
+            {
+                "key": "field_sr_hero_title",
+                "label": "Hero Title",
+                "name": "sr_hero_title",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Main heading for hero section",
+                "required": 1,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_sr_hero_subtitle",
+                "label": "Hero Subtitle",
+                "name": "sr_hero_subtitle",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": ""
+            },
+            {
+                "key": "field_698f78274afc1",
+                "label": "Hero CTA Button",
+                "name": "sr_hero_cta_button",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/sr-hero"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_sr_lead_form_block",
+        "title": "SR Lead Form Block",
+        "fields": [
+            {
+                "key": "field_sr_form_title",
+                "label": "Form Title",
+                "name": "sr_form_title",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Get in Touch",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_sr_form_subtext",
+                "label": "Form Shortcode",
+                "name": "sr_form_shortcode",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/sr-lead-form"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_sr_services_block",
+        "title": "SR Services Block",
+        "fields": [
+            {
+                "key": "field_sr_services_title",
+                "label": "Section Title",
+                "name": "sr_services_title",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_698f7c513dda7",
+                "label": "Choose Service",
+                "name": "sr_choose_service",
+                "aria-label": "",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "service"
+                ],
+                "post_status": "",
+                "taxonomy": "",
+                "return_format": "id",
+                "multiple": 1,
+                "allow_null": 0,
+                "bidirectional": 0,
+                "ui": 1,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_sr_services_show_all_btn",
+                "label": "Show 'All Services' Button",
+                "name": "sr_services_show_all_btn",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_sr_services_all_url",
+                "label": "All Services URL",
+                "name": "sr_services_all_url",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_sr_services_show_all_btn",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/sr-services"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_sr_why_choose_block",
+        "title": "SR Why Choose Block",
+        "fields": [
+            {
+                "key": "field_sr_why_title",
+                "label": "Section Title",
+                "name": "sr_why_title",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Why Choose Us",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_sr_why_items",
+                "label": "Why Choose Items",
+                "name": "sr_why_items",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 1,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_sr_why_icon",
+                        "label": "Icon (SVG or Image)",
+                        "name": "sr_why_icon",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": 0,
+                        "min_height": 0,
+                        "min_size": 0,
+                        "max_width": 0,
+                        "max_height": 0,
+                        "max_size": 0,
+                        "mime_types": "",
+                        "parent_repeater": "field_sr_why_items"
+                    },
+                    {
+                        "key": "field_sr_why_item_title",
+                        "label": "Title",
+                        "name": "sr_why_item_title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_sr_why_items"
+                    },
+                    {
+                        "key": "field_sr_why_item_text",
+                        "label": "Description",
+                        "name": "sr_why_item_text",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "new_lines": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "rows": "",
+                        "parent_repeater": "field_sr_why_items"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/sr-why-choose"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
